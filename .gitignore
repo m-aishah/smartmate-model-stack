@@ -1,0 +1,9 @@
+asr_env/*
+__pycache__/
+data/raw_audio/*
+data/processed/*
+.hg/*
+venv/*
+venv
+app/tests/
+.env

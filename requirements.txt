@@ -1,0 +1,12 @@
+tqdm
+nltk
+transformers
+torch
+numpy
+google-cloud-translate
+python-multipart
+uvicorn
+fastapi
+soundfile
+python-dotenv
+assemblyai
