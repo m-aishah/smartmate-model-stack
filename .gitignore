@@ -6,3 +6,4 @@ data/processed/*
 venv/*
 venv
 app/tests/
+.env
