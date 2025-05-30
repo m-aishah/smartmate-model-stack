@@ -33,11 +33,11 @@ class AssemblyTranscriber:
         try:
             logger.info(f"Transcribing local file via AssemblyAI: {audio_file_path}")
             transcript = self.transcriber.transcribe(audio_file_path)
-            # logger.debug(f"Transcription result: {transcript}")
+            logger.debug(f"Transcription result: {transcript}")
             if transcript.status == "error":
                 raise RuntimeError(f"Transcription failed: {transcript.error}")
-            # return transcript.text
-            return "This is a test transcription from AssemblyAI."
+            return transcript.text
+            # return "This is a test transcription from AssemblyAI."
         except Exception as e:
             logger.exception(f"Error during transcription for file {audio_file_path}")
             raise
